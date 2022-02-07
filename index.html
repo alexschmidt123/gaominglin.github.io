@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav flexed">
+        <div class="dojoweather">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="city flexed">
+            <div onclick="loading()" class="city_name">
+                <h3>Burbank</h3>
+            </div>
+            <div onclick="loading()" class="city_name">
+                <h3>Chicago</h3>
+            </div>
+            <div onclick="loading()" class="city_name">
+                <h3>Dallas</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title flexed">
+            <h2>San Jose</h2>
+            <div class="temperature flexed">
+                <div class="temp_name">
+                    <h4>show temperature in </h4>
+                </div>
+                <div class="temp_unit">
+                    <select name="unit" onchange="unit(this)">
+                        <option value="1">°C</option>
+                        <option value="2">°F</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="weather flexed">
+            <div class="feature">
+                <h3>Today</h3>
+                <div class="feature_img">
+                    <img src="./assets/some_rain.png" alt="some_rain">
+                </div>
+                <h4>some rain</h4>
+                <div class="high_low flexed">
+                    <div class="high flexed">
+                        <h2 class="temp">24</h2>
+                        <h2>°</h2>
+                    </div>
+                    <div class="low flexed">
+                        <h2 class="temp">18</h2>
+                        <h2>°</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <h3>Tomorrow</h3>
+                <div class="feature_img">
+                    <img src="./assets/some_sun.png" alt="some_sun">
+                </div>
+                <h4>some sun</h4>
+                <div class="high_low flexed">
+                    <div class="high flexed">
+                        <h2 class="temp">27</h2>
+                        <h2>°</h2>
+                    </div>
+                    <div class="low flexed">
+                        <h2 class="temp">19</h2>
+                        <h2>°</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <h3>Friday</h3>
+                <div class="feature_img">
+                    <img src="./assets/some_clouds.png" alt="some_cloud">
+                </div>
+                <h4>some clouds</h4>
+                <div class=" flexed_low flexed">
+                    <div class="high flexed">
+                        <h2 class="temp">21</h2>
+                        <h2>°</h2>
+                    </div>
+                    <div class="low flexed">
+                        <h2 class="temp">16</h2>
+                        <h2>°</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <h3>Saturday</h3>
+                <div class="feature_img">
+                    <img src="./assets/some_sun.png" alt="some_sun">
+                </div>
+                <h4>some sun</h4>
+                <div class="high_low flexed">
+                    <div class="high flexed">
+                        <h2 class="temp">26</h2>
+                        <h2>°</h2>
+                    </div>
+                    <div class="low flexed">
+                        <h2 class="temp">21</h2>
+                        <h2>°</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <div class="cookie_img">
+                <img src="./assets/cookie.png" alt="cookie">
+            </div>
+            <div class="text">
+                <h3>Stop! Cookie time</h3>
+                <h4>We use cookie (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="https://en.wikipedia.org/wiki/HTTP_cookie">Read
+                        more..</a></h4>
+            </div>
+            <div class="cookie_btn">
+                <button onclick="dismiss()">I Accept</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

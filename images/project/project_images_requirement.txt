@@ -1,0 +1,1 @@
+all project images should be at the size of 1280*720
